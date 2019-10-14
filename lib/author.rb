@@ -1,4 +1,4 @@
-class Artist 
+class Author 
   
   attr_accessor :name  
   
@@ -6,11 +6,11 @@ class Artist
     @name = name 
   end 
   
-  def add_song(song)
-    song.artist = self
+  def add_post(post)
+    post.author = self
   end 
   
-  def add_song_by_name(name)
+  def add_post_by_title(name)
     song = Song.new(name)
     add_song(song)
   end 
